@@ -1,0 +1,220 @@
+
+========================================
+📡 Source: No Title
+========================================
+
+
+========================================
+📡 Source: Release notes from anthropic-sdk-python
+========================================
+
+📌 [2025-11-19] v0.74.1
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.74.1
+📝 Detail: 0.74.1 (2025-11-19)
+Full Changelog: v0.74.0...v0.74.1
+Bug Fixes
+
+structured outputs: use correct beta header (e90d347)
+
+Chores
+
+examples: update model references (e09461d)
+--------------------
+📌 [2025-11-18] v0.74.0
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.74.0
+📝 Detail: 0.74.0 (2025-11-18)
+Full Changelog: v0.73.0...v0.74.0
+Features
+
+add Foundry SDK (3ae9e45)
+
+Bug Fixes
+
+examples/memory: properly add assistant_content to messages (#1049) (9c7141b)
+use posix paths in file collection for cross-platform compatibility (d9c6f40), closes #1051
+
+Chores
+
+internal: remove unnecessary wrapper around external snapshots (19eceac)
+
+Documentation
+
+explain snapshot update process (#1040) (b61fd87)
+--------------------
+📌 [2025-11-14] v0.73.0
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.73.0
+📝 Detail: 0.73.0 (2025-11-14)
+Full Changelog: v0.72.1...v0.73.0
+Features
+
+api: add support for structured outputs beta (688da81)
+--------------------
+📌 [2025-11-11] v0.72.1
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.72.1
+📝 Detail: 0.72.1 (2025-11-11)
+Full Changelog: v0.72.0...v0.72.1
+Bug Fixes
+
+client: close streams without requiring full consumption (109b771)
+compat with Python 3.14 (bd2a137)
+compat: update signatures of model_dump and model_dump_json for Pydantic v1 (540f0f8)
+
+Chores
+
+internal/tests: avoid race condition with implicit client cleanup (72767ce)
+internal: grammar fix (it's -&gt; its) (9efe993)
+package: drop Python 3.8 support (e9af5d3)
+--------------------
+📌 [2025-10-28] v0.72.0
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.72.0
+📝 Detail: 0.72.0 (2025-10-28)
+Full Changelog: v0.71.1...v0.72.0
+Features
+
+api: add ability to clear thinking in context management (27c8f17)
+--------------------
+📌 [2025-10-28] v0.71.1
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.71.1
+📝 Detail: 0.71.1 (2025-10-28)
+Full Changelog: v0.71.0...v0.71.1
+Bug Fixes
+
+client: resolve non-functional default socket options (4606137)
+
+Chores
+
+api: mark older sonnet models as deprecated (7906595)
+bump httpx-aiohttp version to 0.1.9 (5d27492)
+--------------------
+📌 [2025-10-16] v0.71.0
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.71.0
+📝 Detail: 0.71.0 (2025-10-16)
+Full Changelog: v0.70.0...v0.71.0
+Features
+
+api: adding support for agent skills (51a606f)
+--------------------
+📌 [2025-10-15] v0.70.0
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.70.0
+📝 Detail: 0.70.0 (2025-10-15)
+Full Changelog: v0.69.0...v0.70.0
+Features
+
+api: manual updates (39e62ac)
+
+Chores
+
+client: add context-management-2025-06-27 beta header (36dd334)
+client: add model-context-window-exceeded-2025-08-26 beta header (2cbdb0f)
+internal: detect missing future annotations with ruff (b2a2b05)
+--------------------
+📌 [2025-09-29] v0.69.0
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.69.0
+📝 Detail: 0.69.0 (2025-09-29)
+Full Changelog: v0.68.2...v0.69.0
+Features
+
+api: adds support for Claude Sonnet 4.5 and context management features (f93eb12)
+--------------------
+📌 [2025-09-29] v0.68.2
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.68.2
+📝 Detail: 0.68.2 (2025-09-29)
+Full Changelog: v0.68.1...v0.68.2
+Bug Fixes
+
+do not set headers with default to omit (95b14ab)
+--------------------
+
+========================================
+📡 Source: Recent Commits to claude-cookbooks:main
+========================================
+
+📌 [2025-11-21] Merge pull request #299 from anthropics/update-memory-cookbook-contex…
+🔗 https://github.com/anthropics/claude-cookbooks/commit/9e6ca618fa0173f9253c6d6a41981c3ee2c8d309
+📝 Detail: Merge pull request #299 from anthropics/update-memory-cookbook-context-editing
+
+Update memory cookbook with context editing and extended thinking features
+--------------------
+📌 [2025-11-21] Merge branch 'main' into update-memory-cookbook-context-editing
+🔗 https://github.com/anthropics/claude-cookbooks/commit/17a5bc9d17c568892c04faefbbdc18c2a2456681
+📝 Detail: Merge branch 'main' into update-memory-cookbook-context-editing
+--------------------
+📌 [2025-11-21] Remove sync-related files not needed in this PR
+🔗 https://github.com/anthropics/claude-cookbooks/commit/5134c37909e8122b5e86faf935e1b6ceb8ac27bb
+📝 Detail: Remove sync-related files not needed in this PR
+
+These files (.github/workflows/pull-from-public.yml, .github/workflows/push-to-public.yml, SYNC_STRATEGY.md) were added by mistake and are not related to the memory cookbook context editing changes.
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude &lt;noreply@anthropic.com&gt;
+--------------------
+📌 [2025-11-21] Fix linting errors in memory demo files
+🔗 https://github.com/anthropics/claude-cookbooks/commit/8fe6baec6886c3ea433feba916308a94e882df60
+📝 Detail: Fix linting errors in memory demo files
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude &lt;noreply@anthropic.com&gt;
+--------------------
+📌 [2025-11-19] Add author and notebook registry for cookbooks  (#237)
+🔗 https://github.com/anthropics/claude-cookbooks/commit/5abf30e0a0d6bb579d84677c0c3ec11bf40b24e3
+📝 Detail: Add author and notebook registry for cookbooks  (#237)
+
+initialize cookbook registry and author management system
+
+Add JSON schemas and YAML configurations for managing cookbook metadata
+and author information. This includes:
+
+- authors_schema.json: Schema for mapping GitHub usernames to author details
+- registry_schema.json: Schema for cookbook metadata with required fields
+  (title, path, slug, category, github_url, authors, date)
+- authors.yml: Initial author mappings with Anthropic and contributors
+- registry.yaml: Comprehensive cookbook registry with 70+ entries across
+  multiple categori
+--------------------
+📌 [2025-11-17] minor fixes
+🔗 https://github.com/anthropics/claude-cookbooks/commit/9143c6481ca829d899f365b915578d87e8c60f97
+📝 Detail: minor fixes
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude &lt;noreply@anthropic.com&gt;
+--------------------
+📌 [2025-11-15] update cookbook file name
+🔗 https://github.com/anthropics/claude-cookbooks/commit/a4f8d4cffa1931462f94aa4a7993b17a704853e6
+📝 Detail: update cookbook file name
+--------------------
+📌 [2025-11-15] minor fixes
+🔗 https://github.com/anthropics/claude-cookbooks/commit/7074e69dc9c21a6655f235fb44ed101104eb0412
+📝 Detail: minor fixes
+--------------------
+📌 [2025-11-15] Add extended thinking support for context editing demos
+🔗 https://github.com/anthropics/claude-cookbooks/commit/f8712d1f567463a46facb3ad19646ddd86fec522
+📝 Detail: Add extended thinking support for context editing demos
+
+- Update demo_helpers.py to support extended thinking parameter
+- Handle thinking blocks with signatures in API responses
+- Configure Session 3 demo with clear_thinking_20251015 + clear_tool_uses
+- Enable extended thinking (budget_tokens=1024, max_tokens=4096)
+- Fix context_management response parsing for pydantic objects
+- Update all markdown to document thinking requirements accurately
+- Execute notebook to generate fresh outputs showing both strategies
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Cl
+--------------------
+📌 [2025-11-15] Add complete context editing demo with both APIs
+🔗 https://github.com/anthropics/claude-cookbooks/commit/06934643b99e43ee940d0d4b8754767249b16e90
+📝 Detail: Add complete context editing demo with both APIs
+
+- Include clear_thinking_20251015 in context management config
+- Add API call pattern showing required beta flag
+- Add third review to ensure clearing triggers
+- Show both strategies working together (thinking first, then tool uses)
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude &lt;noreply@anthropic.com&gt;
+--------------------
