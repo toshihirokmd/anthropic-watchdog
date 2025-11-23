@@ -2,6 +2,7 @@ import feedparser
 import datetime
 import os
 import re
+from datetime import timedelta, timezone # ← ここが修正ポイント
 
 # 🔥 監視対象リスト (技術者向け)
 RSS_URLS = [
@@ -21,12 +22,14 @@ def clean_html(raw_html):
     cleantext = re.sub(cleanr, '', raw_html)
     return cleantext.strip()
 
-# 保存設定
-today = datetime.date.today()
+# 保存設定 (日本時間JSTで日付を取得)
+JST = timezone(timedelta(hours=9), 'JST')
+today = datetime.datetime.now(JST).date()
+
 os.makedirs("data", exist_ok=True)
 filename = f"data/{today}.txt"
 
-print(f"Fetching data for {today}...")
+print(f"Fetching Anthropic data for {today} (JST)...")
 
 with open(filename, "w", encoding="utf-8") as f:
     for url in RSS_URLS:
@@ -38,16 +41,16 @@ with open(filename, "w", encoding="utf-8") as f:
             f.write(f"📡 Source: {site_title}\n")
             f.write(f"{'='*40}\n\n")
             
-            # 最新10件のみ取得（多すぎるとトークン圧迫するため）
+            # 最新10件のみ取得
             for entry in feed.entries[:10]:
-                # 日付取得 (AtomとRSSで場所が違うため調整)
+                # 日付取得
                 date_str = entry.get('updated', '') or entry.get('published', '')
                 date_str = date_str[:10] # YYYY-MM-DDだけ取る
                 
                 title = entry.get('title', 'No Title')
                 link = entry.get('link', '')
                 
-                # 内容の取得（GitHubのFeedはcontentに入る）
+                # 内容の取得
                 content = ''
                 if 'content' in entry:
                     content = entry.content[0].value
@@ -55,12 +58,14 @@ with open(filename, "w", encoding="utf-8") as f:
                     content = entry.summary
                 
                 # HTML除去して整形
-                text_content = clean_html(content)[:600] # 長すぎる場合はカット
+                text_content = clean_html(content)[:600]
                 
                 f.write(f"📌 [{date_str}] {title}\n")
                 f.write(f"🔗 {link}\n")
                 f.write(f"📝 Detail: {text_content}\n")
                 f.write("-" * 20 + "\n")
+            
+            print(f"Successfully fetched: {site_title}")
                 
         except Exception as e:
             print(f"Error fetching {url}: {e}")
