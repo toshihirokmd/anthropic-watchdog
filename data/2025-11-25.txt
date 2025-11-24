@@ -1,0 +1,196 @@
+
+========================================
+📡 Source: No Title
+========================================
+
+
+========================================
+📡 Source: Release notes from anthropic-sdk-python
+========================================
+
+📌 [2025-11-19] v0.74.1
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.74.1
+📝 Detail: 0.74.1 (2025-11-19)
+Full Changelog: v0.74.0...v0.74.1
+Bug Fixes
+
+structured outputs: use correct beta header (e90d347)
+
+Chores
+
+examples: update model references (e09461d)
+--------------------
+📌 [2025-11-18] v0.74.0
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.74.0
+📝 Detail: 0.74.0 (2025-11-18)
+Full Changelog: v0.73.0...v0.74.0
+Features
+
+add Foundry SDK (3ae9e45)
+
+Bug Fixes
+
+examples/memory: properly add assistant_content to messages (#1049) (9c7141b)
+use posix paths in file collection for cross-platform compatibility (d9c6f40), closes #1051
+
+Chores
+
+internal: remove unnecessary wrapper around external snapshots (19eceac)
+
+Documentation
+
+explain snapshot update process (#1040) (b61fd87)
+--------------------
+📌 [2025-11-14] v0.73.0
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.73.0
+📝 Detail: 0.73.0 (2025-11-14)
+Full Changelog: v0.72.1...v0.73.0
+Features
+
+api: add support for structured outputs beta (688da81)
+--------------------
+📌 [2025-11-11] v0.72.1
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.72.1
+📝 Detail: 0.72.1 (2025-11-11)
+Full Changelog: v0.72.0...v0.72.1
+Bug Fixes
+
+client: close streams without requiring full consumption (109b771)
+compat with Python 3.14 (bd2a137)
+compat: update signatures of model_dump and model_dump_json for Pydantic v1 (540f0f8)
+
+Chores
+
+internal/tests: avoid race condition with implicit client cleanup (72767ce)
+internal: grammar fix (it's -&gt; its) (9efe993)
+package: drop Python 3.8 support (e9af5d3)
+--------------------
+📌 [2025-10-28] v0.72.0
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.72.0
+📝 Detail: 0.72.0 (2025-10-28)
+Full Changelog: v0.71.1...v0.72.0
+Features
+
+api: add ability to clear thinking in context management (27c8f17)
+--------------------
+📌 [2025-10-28] v0.71.1
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.71.1
+📝 Detail: 0.71.1 (2025-10-28)
+Full Changelog: v0.71.0...v0.71.1
+Bug Fixes
+
+client: resolve non-functional default socket options (4606137)
+
+Chores
+
+api: mark older sonnet models as deprecated (7906595)
+bump httpx-aiohttp version to 0.1.9 (5d27492)
+--------------------
+📌 [2025-10-16] v0.71.0
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.71.0
+📝 Detail: 0.71.0 (2025-10-16)
+Full Changelog: v0.70.0...v0.71.0
+Features
+
+api: adding support for agent skills (51a606f)
+--------------------
+📌 [2025-10-15] v0.70.0
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.70.0
+📝 Detail: 0.70.0 (2025-10-15)
+Full Changelog: v0.69.0...v0.70.0
+Features
+
+api: manual updates (39e62ac)
+
+Chores
+
+client: add context-management-2025-06-27 beta header (36dd334)
+client: add model-context-window-exceeded-2025-08-26 beta header (2cbdb0f)
+internal: detect missing future annotations with ruff (b2a2b05)
+--------------------
+📌 [2025-09-29] v0.69.0
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.69.0
+📝 Detail: 0.69.0 (2025-09-29)
+Full Changelog: v0.68.2...v0.69.0
+Features
+
+api: adds support for Claude Sonnet 4.5 and context management features (f93eb12)
+--------------------
+📌 [2025-09-29] v0.68.2
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.68.2
+📝 Detail: 0.68.2 (2025-09-29)
+Full Changelog: v0.68.1...v0.68.2
+Bug Fixes
+
+do not set headers with default to omit (95b14ab)
+--------------------
+
+========================================
+📡 Source: Recent Commits to claude-cookbooks:main
+========================================
+
+📌 [2025-11-24] Merge pull request #302 from anthropics/zh/adds-all-cookbooks
+🔗 https://github.com/anthropics/claude-cookbooks/commit/7fd2ac6fcb7f1c7926b4f845c360399a14008af8
+📝 Detail: Merge pull request #302 from anthropics/zh/adds-all-cookbooks
+
+Adds all cookbooks for Opus 4.5
+--------------------
+📌 [2025-11-24] Merge changes from public/main into zh/adds-all-cookbooks
+🔗 https://github.com/anthropics/claude-cookbooks/commit/a0b47a009ac9e55dfb51f661fd74fcb84bc839fd
+📝 Detail: Merge changes from public/main into zh/adds-all-cookbooks
+
+Resolved conflicts in:
+- .github/workflows/pull-from-public.yml (removed, private repo only)
+- pyproject.toml (merged dependencies and ruff config)
+- uv.lock (regenerated with uv lock)
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude &lt;noreply@anthropic.com&gt;
+--------------------
+📌 [2025-11-24] Merge branch 'nadine/crop-tool' into zh/adds-all-cookbooks
+🔗 https://github.com/anthropics/claude-cookbooks/commit/d2b45b667f585c60a809f30399a3585410c74aec
+📝 Detail: Merge branch 'nadine/crop-tool' into zh/adds-all-cookbooks
+--------------------
+📌 [2025-11-24] Merge branch 'pdrm/acc' into zh/adds-all-cookbooks
+🔗 https://github.com/anthropics/claude-cookbooks/commit/2910c87c0baa5855d17a7715bde2412e0b482d5f
+📝 Detail: Merge branch 'pdrm/acc' into zh/adds-all-cookbooks
+--------------------
+📌 [2025-11-24] Merge branch 'henry/10-16-tool-search-tool-cookbook' into zh/adds-all…
+🔗 https://github.com/anthropics/claude-cookbooks/commit/b058122e6fb2c0ca61e50725a170f2d5ccd5108a
+📝 Detail: Merge branch 'henry/10-16-tool-search-tool-cookbook' into zh/adds-all-cookbooks
+--------------------
+📌 [2025-11-24] Merge branch 'pdrm/ptc' into zh/adds-all-cookbooks
+🔗 https://github.com/anthropics/claude-cookbooks/commit/4f95b05595a11c2c62c9c39327b264c5d95e3eac
+📝 Detail: Merge branch 'pdrm/ptc' into zh/adds-all-cookbooks
+--------------------
+📌 [2025-11-24] Merge branch 'public'
+🔗 https://github.com/anthropics/claude-cookbooks/commit/156458a1aade62faca58537171ba18b292cafc3d
+📝 Detail: Merge branch 'public'
+
+Resolved conflict by combining both approaches:
+- Kept up-to-date check for efficiency
+- Adopted comprehensive workflow exclusion (all workflows, not just sync workflows)
+--------------------
+📌 [2025-11-24] Updates requirements to prevent dependency errors
+🔗 https://github.com/anthropics/claude-cookbooks/commit/2391d3ef99ec35ff33cc07af7a89cbb362916dc5
+📝 Detail: Updates requirements to prevent dependency errors
+--------------------
+📌 [2025-11-24] Simplify crop tool notebook
+🔗 https://github.com/anthropics/claude-cookbooks/commit/df2dbc7e57df193f38a050f444b9f5288bad6a6d
+📝 Detail: Simplify crop tool notebook
+
+- Reduce dataset download from full to 10 samples
+- Simplify agentic loop (remove max_crops)
+- Add Claude Agent SDK section with MCP tool
+- Display cropped images inline in output
+- Use consistent prompt format across both approaches
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude &lt;noreply@anthropic.com&gt;
+--------------------
+📌 [2025-11-24] full run
+🔗 https://github.com/anthropics/claude-cookbooks/commit/634ae9b95d695969fa0e9b94446b6d5468b8417e
+📝 Detail: full run
+--------------------
