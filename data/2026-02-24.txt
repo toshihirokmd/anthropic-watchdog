@@ -1,0 +1,261 @@
+
+========================================
+📡 Source: No Title
+========================================
+
+
+========================================
+📡 Source: Release notes from anthropic-sdk-python
+========================================
+
+📌 [2026-02-19] v0.83.0
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.83.0
+📝 Detail: 0.83.0 (2026-02-19)
+Full Changelog: v0.82.0...v0.83.0
+Features
+
+api: Add top-level cache control (automatic caching) (a940123)
+
+Chores
+
+update mock server docs (34ef48c)
+--------------------
+📌 [2026-02-18] v0.82.0
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.82.0
+📝 Detail: 0.82.0 (2026-02-18)
+Full Changelog: v0.81.0...v0.82.0
+Features
+
+api: fix shared UserLocation and error code types (da3b931)
+
+Bug Fixes
+
+add backward-compat aliases for removed nested UserLocation classes (#1409) (56db1e3)
+--------------------
+📌 [2026-02-18] v0.81.0
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.81.0
+📝 Detail: 0.81.0 (2026-02-18)
+Full Changelog: v0.80.0...v0.81.0
+Features
+
+api: Make new tool versions available as top level tool types (0a385c2)
+--------------------
+📌 [2026-02-17] v0.80.0
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.80.0
+📝 Detail: 0.80.0 (2026-02-17)
+Full Changelog: v0.79.0...v0.80.0
+Features
+
+api: Releasing claude-sonnet-4-6 (d518d6e)
+
+Bug Fixes
+
+api: fix spec errors (1413a76)
+remove speed from ga messages (#1402) (f6ce67c)
+
+Chores
+
+format all api.md files (28a0eb5)
+internal: bump dependencies (99f3014)
+internal: fix lint error on Python 3.14 (a90d71b)
+
+Refactors
+
+vertex: remove redundant isinstance check in load_auth (#1387) (6b7a7dc)
+--------------------
+📌 [2026-02-07] v0.79.0
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.79.0
+📝 Detail: 0.79.0 (2026-02-07)
+Full Changelog: v0.78.0...v0.79.0
+Features
+
+api: enabling fast-mode in claude-opus-4-6 (5953ba7)
+
+Bug Fixes
+
+pass speed parameter through in sync beta count_tokens (1dd6119)
+--------------------
+📌 [2026-02-07] v0.78.0
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.78.0
+📝 Detail: 0.78.0 (2026-02-05)
+Full Changelog: v0.77.1...v0.78.0
+Features
+
+api: Release Claude Opus 4.6, adaptive thinking, and other features (3ef1529)
+--------------------
+📌 [2026-02-03] v0.77.1
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.77.1
+📝 Detail: 0.77.1 (2026-02-03)
+Full Changelog: v0.77.0...v0.77.1
+Bug Fixes
+
+structured outputs: send structured output beta header when format is omitted (#1158) (258494e)
+
+Chores
+
+remove claude-code-review workflow (#1338) (aec4512)
+--------------------
+📌 [2026-01-29] v0.77.0
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.77.0
+📝 Detail: 0.77.0 (2026-01-29)
+Full Changelog: v0.76.0...v0.77.0
+Features
+
+api: add support for Structured Outputs in the Messages API (ad56677)
+api: migrate sending message format in output_config rather than output_format (af405e4)
+client: add custom JSON encoder for extended type support (7780e90)
+use output_config for structured outputs (82d669d)
+
+Bug Fixes
+
+client: run formatter (2e4ff86)
+remove class causing breaking change (#1333) (81ee953)
+structured outputs: avoid including beta header if output_format is missing (#1121) (062077e)
+
+Chores
+
+ci: upgrade actions/github-script (34df616)
+internal: up
+--------------------
+📌 [2026-01-13] v0.76.0
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.76.0
+📝 Detail: 0.76.0 (2026-01-13)
+Full Changelog: v0.75.0...v0.76.0
+Features
+
+allow raw JSON schema to be passed to messages.stream() (955c61d)
+client: add support for binary request streaming (5302f27)
+tool runner: add support for server-side tools (#1086) (1521316)
+
+Bug Fixes
+
+client: loosen auth header validation (5a0b89b)
+ensure streams are always closed (388bd0c)
+types: allow pyright to infer TypedDict types within SequenceNotStr (ede3242)
+use async_to_httpx_files in patch method (718fa8e)
+
+Chores
+
+add missing docstrings (d306605)
+bump required uv version (90634f3)
+ci: Add Claude Code GitHub Workflow (
+--------------------
+📌 [2025-11-24] v0.75.0
+🔗 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.75.0
+📝 Detail: 0.75.0 (2025-11-24)
+Full Changelog: v0.74.1...v0.75.0
+Features
+
+api: adds support for Claude Opus 4.5, Effort, Advance Tool Use Features, Autocompaction, and Computer Use v5 (5c3e633)
+
+Bug Fixes
+
+internal: small fixes (36c82f7)
+
+Chores
+
+fix lint issues (4f1fd54)
+--------------------
+
+========================================
+📡 Source: Recent Commits to claude-cookbooks:main
+========================================
+
+📌 [2026-02-20] docs(misc): update prompt caching cookbook with automatic caching (#387)
+🔗 https://github.com/anthropics/claude-cookbooks/commit/419ce35fa8457347ff8bf61bffed791f8617b8c1
+📝 Detail: docs(misc): update prompt caching cookbook with automatic caching (#387)
+--------------------
+📌 [2026-02-17] docs: update all model references from Claude 4.5 to Claude 4.6 (#375)
+🔗 https://github.com/anthropics/claude-cookbooks/commit/944b94a0ebc6025e89aaf90136e120a72068b077
+📝 Detail: docs: update all model references from Claude 4.5 to Claude 4.6 (#375)
+
+* docs: update all model references from Claude 4.5 to Claude 4.6
+
+- Update model IDs across all notebooks, scripts, and configs
+- Add Bedrock model ID conventions and exclude from dated-model checks
+- Add validation rules to prevent dated model IDs
+
+* fix: update prose references from Claude Sonnet 4.5/Opus 4.5 to 4.6
+
+- memory_cookbook.ipynb: Update 'Claude Sonnet 4.5' to 'Claude Sonnet 4.6'
+- 01_The_chief_of_staff_agent.ipynb: Update 'Opus 4.5' to 'Opus 4.6'
+- registry.yaml: Update title to 'Claude Sonnet 4.6'
+--------------------
+📌 [2026-02-05] docs(tool_use): add Opus 4.6 server-side compaction guidance to conte…
+🔗 https://github.com/anthropics/claude-cookbooks/commit/7cb72a9c879e3b95f58d30a3d7483906e9ad548e
+📝 Detail: docs(tool_use): add Opus 4.6 server-side compaction guidance to context compaction cookbook (#369)
+
+Adds a callout recommending server-side compaction for Opus 4.6 users,
+clarifying that this cookbook covers SDK-based compaction for older models
+or alternative summarization model use cases.
+
+Co-authored-by: Claude Opus 4.6 &lt;noreply@anthropic.com&gt;
+--------------------
+📌 [2026-01-30] Merge pull request #343 from anthropics/feature/code-compaction-cookbook
+🔗 https://github.com/anthropics/claude-cookbooks/commit/ce4c093127bb52ad79294bd433b2de5a19dab31f
+📝 Detail: Merge pull request #343 from anthropics/feature/code-compaction-cookbook
+
+Add session memory compaction cookbook. Including instant compaction.
+--------------------
+📌 [2026-01-27] docs: fix broken Google Sheets link in classification evaluation READ…
+🔗 https://github.com/anthropics/claude-cookbooks/commit/968fc1698b3f5fe0a1c67d2185d3264de4569d52
+📝 Detail: docs: fix broken Google Sheets link in classification evaluation README (#359)
+
+Replace broken Google Sheets link with reference to local dataset.csv file
+which contains the same data.
+
+Fixes #341
+
+Co-authored-by: Claude Opus 4.5 &lt;noreply@anthropic.com&gt;
+--------------------
+📌 [2026-01-16] Implement feature X to enhance user experience and optimize performance
+🔗 https://github.com/anthropics/claude-cookbooks/commit/2f77ae841886cdedd4209504f807acab41f3c59b
+📝 Detail: Implement feature X to enhance user experience and optimize performance
+
+:house: Remote-Dev: homespace
+--------------------
+📌 [2026-01-16] fix: address additional PR review feedback
+🔗 https://github.com/anthropics/claude-cookbooks/commit/d09f2ffcc518f4898ac077188638b6a84e65e164
+📝 Detail: fix: address additional PR review feedback
+
+- Remove hardcoded API key, use Anthropic() with env auto-detection
+- Fix pip install to use %%capture magic per project standards
+- Add return type annotation to remove_thinking_blocks function
+- Remove redundant 'What You'll Learn' section (duplicates Learning Objectives)
+- Clean up duplicate cells from previous edits
+
+:house: Remote-Dev: homespace
+
+Claude-Generated-By: Claude Code (cli/claude-opus-4-5=100%)
+Claude-Steers: 1
+Claude-Permission-Prompts: 13
+Claude-Escapes: 0
+--------------------
+📌 [2026-01-16] merge: resolve conflict with main in registry.yaml
+🔗 https://github.com/anthropics/claude-cookbooks/commit/bc367bdd2f930ce5c058581a24fb3dbe008a5059
+📝 Detail: merge: resolve conflict with main in registry.yaml
+
+:house: Remote-Dev: homespace
+--------------------
+📌 [2026-01-16] added description of instant compact
+🔗 https://github.com/anthropics/claude-cookbooks/commit/0f0a8c09869ec251e7fb74b0801fb6d35f09da3f
+📝 Detail: added description of instant compact
+
+:house: Remote-Dev: homespace
+--------------------
+📌 [2026-01-16] fix: address PR review feedback for session memory compaction cookbook
+🔗 https://github.com/anthropics/claude-cookbooks/commit/968ce9bd2b9df31202c5ead470b5b04e8f219056
+📝 Detail: fix: address PR review feedback for session memory compaction cookbook
+
+- Restore accidentally deleted .env.example
+- Add registry.yaml entry for the notebook
+- Add proper introduction with learning objectives
+- Add prerequisites and setup section with pip install and load_dotenv()
+- Fix typo: Utlizing → Utilizing
+- Add conclusion section mapping to learning objectives
+- Remove placeholder misc/session_memory.md
+- Update MODEL to full model ID (claude-sonnet-4-5-20250929)
+- Add cross-reference to automatic-context-compaction.ipynb
+- Update notebook kernel from coconut to python
+- Fix timing pl
+--------------------
